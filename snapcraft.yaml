@@ -1,0 +1,15 @@
+name: rust
+version: master
+summary: The Rust programming languate
+description: |
+  Rust is a systems programming language that runs blazingly fast, prevents
+  segfaults, and guarantees thread safety.
+
+grade: devel
+confinement: strict
+
+parts:
+  rust:
+    source: .
+    plugin: autotools
+    build-packages: [g++, git, curl, python]
